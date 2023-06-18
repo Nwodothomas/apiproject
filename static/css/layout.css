@@ -38,6 +38,14 @@ header {
     font-size: 24px;
 }
 
+/* Add the following CSS for sticky header and footer */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+  }
+
 nav ul {
     margin: 0;
     padding: 0;
