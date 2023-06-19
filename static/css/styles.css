@@ -1,0 +1,428 @@
+/* General Styles */
+body {
+  background-color: #ffffff; /* plain white background */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0099cc; /* blue */
+  padding: 20px;
+  color: #ffffff; /* white */
+  z-index: 999; /* ensure the header appears on top of other elements */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.company-name h1 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  margin-left: 10px;
+  font-size: 24px;
+}
+
+nav {
+  flex-grow: 1; /* Allow the navigation to fill the remaining space */
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex; /* Display the list items in a row */
+  justify-content: space-between; /* Align the list items with space between them */
+}
+
+nav ul.left-links {
+  justify-content: flex-start; /* Align the left links to the left */
+}
+
+nav ul.right-links {
+  justify-content: flex-end; /* Align the right links to the right */
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li:last-child {
+  margin-right: 30px; /* Remove margin for the last link */
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Add the following CSS for the navigation bar */
+nav {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+  background-color: #0099cc; /* blue */
+  color: #ffffff; /* white */
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-navigation ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-navigation ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.footer-navigation ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.social-media-links a {
+  color: #ffffff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+/* Additional Styles */
+.flash-messages {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flash-messages li {
+  margin-bottom: 10px;
+  color: #0099cc; /* blue */
+  font-weight: bold;
+}
+
+/* Expand the content section to fill the remaining space */
+.content {
+  flex: 1;
+}
+
+/* Set the footer to stay at the bottom */
+footer {
+  margin-top: auto;
+}
+/*
+footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 100;
+  background-color: #f8f9fa;
+}
+*/
+
+/* Styles specific to index.html */
+/* Add your index specific styles here */
+#intro {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  background-image: url('static/images/home.png'); /* Replace 'your-image.jpg' with the path to your desired image */
+  background-size: cover;
+  background-position: center;
+}
+
+#intro h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+#intro p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#features {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+#features h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#features div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+#features img {
+  max-width: 100%;
+  height: auto;
+}
+
+#features h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#features p {
+  margin-bottom: 20px;
+}
+
+#about {
+  background-color: #d3d8df;
+  padding: 20px;
+}
+
+#about h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  margin-bottom: 20px;
+}
+
+#about ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#about ul li {
+  margin-bottom: 10px;
+}
+
+#about ul li a {
+  color: #0099cc;
+  text-decoration: none;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0099cc;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0077b3;
+}
+
+
+#video {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+#video h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#video iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+#video p {
+  margin-bottom: 20px;
+}
+
+#documentation {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#documentation h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#documentation p {
+  margin-bottom: 20px;
+}
+
+#contact {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+#contact h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  margin-bottom: 20px;
+}
+
+#signin {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#signin h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#signin p {
+  margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  .company-name h1 {
+    font-size: 20px;
+    margin-left: 5px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  footer {
+    padding: 10px;
+  }
+
+  .social-media-links a {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+
+  #intro h1 {
+    font-size: 24px;
+  }
+
+  #intro p {
+    font-size: 16px;
+  }
+
+  #features h2 {
+    font-size: 20px;
+  }
+  
+  #features div {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+  }
+
+  #features h3 {
+    font-size: 16px;
+  }
+
+  #features p {
+    font-size: 14px;
+  }
+
+  #about h2 {
+    font-size: 20px;
+  }
+
+  #about p {
+    font-size: 14px;
+  }
+
+  #about ul li a {
+    font-size: 12px;
+  }
+
+  #video h2 {
+    font-size: 20px;
+  }
+
+  #video iframe {
+    width: 100%;
+  }
+
+  #video p {
+    font-size: 14px;
+  }
+
+  #documentation h2 {
+    font-size: 20px;
+  }
+
+  #documentation p {
+    font-size: 14px;
+  }
+
+  #contact h2 {
+    font-size: 20px;
+  }
+
+  #contact p {
+    font-size: 14px;
+  }
+
+  #signin h2 {
+    font-size: 20px;
+  }
+
+  #signin p {
+    font-size: 14px;
+  }
+}
+/* CSS Animation */
+@keyframes bannerAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply Animation to Banner */
+.banner-image {
+  animation-name: bannerAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
