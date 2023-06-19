@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block title %}Developers Portal{% endblock %}
+
+{% block styles %}
+
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/layout.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/dashboard.css') }}">
+
+
+{% endblock %}
+
+{% block additional_header %}
+<nav>
+    <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">API Reference</a></li>
+        <li><a href="#">Profile</a></li>
+    </ul>
+</nav>
+{% endblock %}
+
+{% block content  %}
+<div class="left-pane">
+    <ul class = "navigation">
+	<li><a href="#dashboard">Dashboard</a></li>
+      <li><a href="#transactions">Transactions</a></li>
+      <li><a href="#analytics">Analytics</a></li>
+      <li><a href="#payment-methods">Payment Methods</a></li>
+      <li><a href="#api-usage">API Usage</a></li>
+      <li><a href="#settings">Settings</a></li>
+      <li><a href="#help">Help &amp; Support</a></li>	
+    </ul>
+  </div>
+  
+
+
+  <div class="main-section">
+  	<div id="dashboard" class="content">
+      	<!-- Dashboard content goes here -->
+      	<h2>Dashboard</h2>
+      	<p>Welcome to the dashboard!</p>
+    </div>
+            
+    <div id="transactions" class="content">
+             <!-- Transactions content goes here -->
+             <h2>Transactions</h2>
+             <p>View and manage your transactions here.</p>
+    </div>
+            
+	<div id="analytics" class="content">
+            
+		<!-- Analytics content goes here -->
+            <h2>Analytics</h2>
+            <p>Track and analyze payment data.</p>
+    </div>
+            
+	<div id="payment-methods" class="content">   
+		<!-- Payment Methods content goes here -->
+            <h2>Payment Methods</h2>
+            <p>Manage your available payment methods.</p>
+	</div>
+
+	<div id="api-usage" class="content">
+             <!-- API Usage content goes here -->
+             <h2>API Usage</h2>
+             <p>Explore and integrate with our API.</p>
+	</div>
+            <div id="settings" class="content">
+            <!-- Settings content goes here -->
+            <h2>Settings</h2>
+            <p>Configure your dashboard settings.</p>
+	</div>
+            <div id="help" class="content">
+            <!-- Help & Support content goes here -->
+            <h2>Help &amp; Support</h2>
+            <p>Get assistance and support.</p>
+            </div>
+      </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/dash.js') }}"></script>
+    
+    
+{% endblock %}
