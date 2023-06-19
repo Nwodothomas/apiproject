@@ -118,7 +118,7 @@ def login():
                 session['logged_in'] = True
                 session['username'] = username
                 flash('You have successfully logged in!', 'success')
-                return redirect(url_for('index'))  # Redirect to index page on successful login
+                return redirect(url_for('payment'))  # Redirect to index page on successful login
 
         flash('Invalid username or password.', 'danger')
         return redirect(url_for('login'))
