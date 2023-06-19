@@ -1,21 +1,3 @@
-/* General Styles */
-/* Set the layout to flexbox for the body */
-body {
-    background-color: #ffffff; /* plain white background */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
 /* Header Styles */
 header {
     background-color: #0099cc; /* blue */
@@ -44,17 +26,22 @@ header {
     top: 0;
     z-index: 100;
     background-color: #fff;
-  }
+}
 
 nav ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    text-align: right; /* Align the navigation links to the right */
 }
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-left: 10px; /* Adjust the spacing between the navigation links */
+}
+
+nav ul li:first-child {
+    margin-left: 0; /* Remove the left margin for the first navigation link */
 }
 
 nav ul li a {
@@ -104,30 +91,11 @@ footer {
 }
 
 /* Expand the content section to fill the remaining space */
-  .content {
+.content {
     flex: 1;
-  }
-  
-  /* Set the footer to stay at the bottom */
-  footer {
+}
+
+/* Set the footer to stay at the bottom */
+footer {
     margin-top: auto;
-  }
-  
-
-/* Styles specific to index.html */
-/* Add your index specific styles here */
-
-/* Styles specific to login.html */
-/* Add your login specific styles here */
-
-/* Styles specific to register.html */
-/* Add your register specific styles here */
-
-/* Styles specific to profile.html */
-/* Add your profile specific styles here */
-
-/* Styles specific to update_account.html */
-/* Add your update_account specific styles here */
-
-/* Styles specific to manage_address.html */
-/* Add your manage_address specific styles here */
+}
