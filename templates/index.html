@@ -1,15 +1,186 @@
-{% extends 'layout.html' %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% block title %}Home - SendPAY{% endblock %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment API</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Include custom CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
 
-{% block styles %}
-    {{ super() }}
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}">
-{% endblock %}
-
-{% block content %}
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <h1>Welcome to the Authentication System</h1>
-        <p>Register and login to access the payment API.</p>
+      <a class="navbar-brand" href="#">SendPAY Payment API</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#video">Video</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('static', filename='doc/doc.html') }}">Documentation</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('login') }}">Sign In</a>
+          </li>
+        </ul>
+      </div>
     </div>
-{% endblock %}
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h1 class="mb-4">Powerful Payment API for Seamless Transactions</h1>
+          <p class="mb-4">Integrate our payment API into your application and unlock a world of possibilities for accepting online payments. With our secure and flexible solution, you can provide a smooth checkout experience for your customers while streamlining your payment processes.</p>
+          <a href="#contact" class="btn btn-primary">Get Started</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="{{ url_for('static', filename='images/home.png') }}" alt="home" class="banner-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <div class="container">
+      <h2 class="text-center mb-4">Key Features</h2>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+          <img src="{{ url_for('static', filename='images/feature1-image.png') }}" alt="Feature 1" class="img-fluid">
+        </div>
+          <h3 class="mt-3">Simple Integration</h3>
+          <p>Easily integrate our payment API into your application using our comprehensive documentation and developer-friendly tools. Start accepting payments in no time.</p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <img src="{{ url_for('static', filename='images/feature2-image.jpg') }}" alt="Feature 2" class="img-fluid">
+          <h3 class="mt-3">Secure Transactions</h3>
+          <p>Rest assured that your customers' payment data is safe with our robust security measures. We follow industry standards to protect sensitive information.</p>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <img src="{{ url_for('static', filename='images/feature3-image.png') }}" alt="Feature 3" class="img-fluid">
+          <h3 class="mt-3">Multiple Payment Methods</h3>
+          <p>Offer a wide range of payment options to your customers, including credit cards, digital wallets, and bank transfers. Expand your customer base with diverse payment choices.</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2 class="text-center mb-4">About Payment API</h2>
+      <p>Payment API is a leading provider of online payment solutions. We empower businesses of all sizes to accept payments securely and efficiently. Our robust API and comprehensive features make it easy to integrate payments into your application, giving you and your customers a seamless experience.</p>
+      <div>
+        <p>At Payment API, we are driven by the desire to revolutionize the way businesses handle online payments. Our inspiration stems from the challenges we observed in the digital commerce landscape, where businesses often struggle to find a secure, flexible, and user-friendly payment solution that meets their specific needs.</p>
+      
+        <p>Our journey began several years ago when our founder, Emmanual Amah, encountered difficulties while managing payments for customers' stores using a cloud point-of-sale platform. Frustrated by the limited options available, he decided to take matters into his own hands and create a payment API that would address these pain points.</p>
+      
+        <p>Over the years, our dedicated team of developers and industry experts have poured their passion and expertise into building a cutting-edge payment API that offers seamless integration, a wide range of payment methods, robust security measures, recurring payment support, and real-time notifications and reporting.</p>
+      
+        <p>As a portfolio project for Holberton School, we are excited to showcase our skills and knowledge in developing this payment API. It has been an incredible learning experience, allowing us to refine our technical abilities and gain a deeper understanding of the complexities and nuances of payment processing.</p>
+      
+        <p>We invite you to explore our payment API and experience the future of online payments. Join us on this journey as we empower businesses with the tools they need to succeed in the digital economy.</p>
+      
+      
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="{{ url_for('static', filename='images/2.png') }}" alt="About Image 1" class="img-fluid">
+        </div>
+        <div class="col-lg-6">
+          <img src="{{ url_for('static', filename='images/security.png') }}" alt="About Image 2" class="img-fluid">
+        </div>
+        
+      </div>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/thomas-nwodo-8aa8a5184/">LinkedIn</a></li>
+        <li><a href="https://github.com/Nwodothomas">GitHub</a></li>
+        <li><a href="https://twitter.com/Great_Nwodo">Twitter</a></li>
+        
+      </ul>
+    <a href="https://github.com/Nwodothomas/landing.git"class="btn">GitHub Repository</a>
+    </div>
+    
+  </section>
+  
+  <!-- Video Section -->
+  <section id="video">
+    <div class="container">
+      <h2 class="text-center mb-4">Introduction Video</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/UhcXwdlPmh0" frameborder="0" allowfullscreen></iframe>
+      <p>At Payment API, we are passionate about simplifying the online payment experience. In this video, we introduce our project, showcase the key features of our payment API, and provide insights into what's next for our platform. Join our team members as they share their expertise and vision for the future of online payments.</p>
+    </div>
+  </section>
+
+  <!-- Documentation Section -->
+  <section id="documentation">
+    <div class="container">
+      <h2 class="text-center mb-4">Documentation</h2>
+      <p>Explore our comprehensive documentation to learn how to integrate our payment API into your application, configure payment methods, handle callbacks, and utilize advanced features. Get started today and streamline your payment processes with ease.</p>
+      <a href="doc/doc.html" class="btn btn-primary">View Documentation</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact</h2>
+      <p>We'd love to hear from you! Reach out to us with any inquiries, feedback, or partnership opportunities. Our dedicated support team is ready to assist you in integrating our payment API and ensuring a smooth payment experience for your customers.</p>
+      <a href="mailto:contact@paymentapi.com" class="btn btn-primary">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- Sign In Section -->
+  <section id="signin">
+    <div class="container">
+      <h2 class="text-center mb-4">Sign In</h2>
+      <form>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email">
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Enter your password">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2023 Payment API. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Include Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

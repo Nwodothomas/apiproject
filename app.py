@@ -63,13 +63,14 @@ payment_model = api.model('Payment', {
 payment_ns = api.namespace('payment', description='Payment operations')
 
 @app.route('/')
-def index():
+def landing():
     if session.get('logged_in'):
-        # User is logged in, display index page
+        # User is logged in, display index.html
         return render_template('index.html')
     else:
-        # User is not logged in, redirect to the login page
-        return redirect(url_for('login'))
+        # User is not logged in, display login.html
+        return render_template('login.html')
+
 
 
 @app.route('/register', methods=['GET', 'POST'])
@@ -118,7 +119,7 @@ def login():
                 session['logged_in'] = True
                 session['username'] = username
                 flash('You have successfully logged in!', 'success')
-                return redirect(url_for('index'))  # Redirect to index page on successful login
+                return redirect(url_for('payment.doc'))  # Redirect to paymentapi swagger ui page on successful login
 
         flash('Invalid username or password.', 'danger')
         return redirect(url_for('login'))
@@ -443,9 +444,9 @@ app.register_blueprint(payment_bp, url_prefix='/api')
 def index():
     return render_template('index.html')
 
-@app.route('/docs/')
+@app.route('/doc/')
 def view_documentation():
-    return render_template('docs/doc.html')
+    return render_template('/doc/doc.html')
 
 if __name__ == '__main__':
     app.run(debug=True)

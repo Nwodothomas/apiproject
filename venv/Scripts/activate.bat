@@ -8,11 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-<<<<<<< HEAD
-set VIRTUAL_ENV=C:\Users\23470\OneDrive - SigmaPAY, Inc\Desktop\sendpayapi\venv
-=======
-set VIRTUAL_ENV=C:\Users\23470\OneDrive - SigmaPAY, Inc\Desktop\landing-page\landing\venv
->>>>>>> landing/static-version
+set VIRTUAL_ENV=C:\Users\23470\OneDrive - SigmaPAY, Inc\Desktop\apiproject\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
