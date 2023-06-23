@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-Import the subprocess module to execute 
+Import the subprocess modules to execute 
 pip commands from within the script
 Define a list called packages that contains 
 the names of the required packages.
@@ -22,6 +22,7 @@ packages = [
 ]
 
 '''Install each package using pip '''
+
 for package in packages:
     subprocess.call(['pip', 'install', package])
 
