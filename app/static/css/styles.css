@@ -426,3 +426,7 @@ footer {
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
+.banner-image {
+  max-width: 100%;
+  height: auto;
+}
