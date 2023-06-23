@@ -5,7 +5,6 @@
 import requests
 
 # Define the necessary variables for your request, such as the API URL and the data to send in the request body
-
 url = 'http://127.0.0.1:5000/api/create_payment'  
 data = {
     'amount': 100,
