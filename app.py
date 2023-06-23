@@ -1,3 +1,7 @@
+#!/usr/bin/python3
+
+'''Accessing API for seamless payment transaction'''
+
 from flask import Flask, render_template, request, redirect, url_for, session, flash, jsonify
 from flask_mysqldb import MySQL
 from itsdangerous import URLSafeTimedSerializer
@@ -147,11 +151,12 @@ def send_email(recipient, subject, body):
     message.body = body
     mail.send(message)
 
-
+# Create dashboard endpoint
 @app.route('/dashboard')
 def dashboard():
     return render_template('dashboard.html')
 
+# Create developers-portal endpoint
 @app.route('/developers-portal')
 def developers_portal():
     return render_template('developers-portal.html')
