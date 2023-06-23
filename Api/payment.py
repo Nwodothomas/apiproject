@@ -1,3 +1,9 @@
+
+'''
+Imports the modules and functions for handling Flask requests, 
+rendering templates, and accessing the payment blueprint. 
+Imports the get_navigation_links function from the utils module.
+'''
 from flask import request, jsonify, render_template
 from . import payment_bp
 from utils import get_navigation_links
