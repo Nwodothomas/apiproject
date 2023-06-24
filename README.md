@@ -1,6 +1,6 @@
 # Sendpay API
 
-![Screenshot](../app/static/images/screenshoot.png)
+![Screenshot](../app/static/images/screenshot.png)
 
 ## Table of Contents
 
