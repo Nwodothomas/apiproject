@@ -103,7 +103,7 @@ Connect with the Sendpay API community:
 - [Twitter](https://twitter.com/Great_Nwodo)
 - [Facebook](https://web.facebook.com/nwodo.thomas.3)
 
-For any inquiries or assistance, please contact our support team at support@sendpayapi.com.
+For any inquiries or assistance, please contact our support team at Nwodothomas@gmail.com.
 
 We are excited about the future of Sendpay API and look forward to working with developers and businesses to make their payment integration experience seamless and secure.
 
