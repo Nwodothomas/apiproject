@@ -48,7 +48,7 @@ Detailed installation instructions and code examples can be found in our [API do
 
 ## Usage
 
-To use the Sendpay API in your application, follow the guidelines provided in the [API documentation](https://docs.sendpayapi.com/usage). The documentation provides comprehensive information on how to:
+To use the Sendpay API in your application, follow the guidelines provided in the [API documentation](https://nwodothomas.github.io/landing/doc/doc.html). The documentation provides comprehensive information on how to:
 
 - Create a payment request
 - Process payments
@@ -99,9 +99,9 @@ The Sendpay API is licensed under the [MIT License](LICENSE). Feel free to use, 
 
 Connect with the Sendpay API community:
 
-- [LinkedIn](https://www.linkedin.com/company/sendpayapi)
-- [Twitter](https://twitter.com/sendpayapi)
-- [Facebook](https://www.facebook.com/sendpayapi)
+- [LinkedIn](https://www.linkedin.com/in/thomas-nwodo-8aa8a5184/)
+- [Twitter](https://twitter.com/Great_Nwodo)
+- [Facebook](https://web.facebook.com/nwodo.thomas.3)
 
 For any inquiries or assistance, please contact our support team at support@sendpayapi.com.
 
