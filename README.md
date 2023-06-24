@@ -18,11 +18,11 @@
 
 Sendpay API is a payment API that enables seamless transactions for businesses and developers. It provides a simple and secure way to integrate payment functionality into applications, allowing users to send and receive payments efficiently.
 
-For more information about Sendpay API, please visit our [official website](https://www.sendpayapi.com).
+For more information about Sendpay API, please visit our [official website](https://nwodothomas.github.io/landing/index.html).
 
-To see an example implementation and learn how to use the Sendpay API, check out our [API documentation](https://docs.sendpayapi.com).
+To see an example implementation and learn how to use the Sendpay API, check out our [API documentation](https://nwodothomas.github.io/landing/doc/doc.html).
 
-For updates and news about the project, please refer to our [blog article](https://blog.sendpayapi.com).
+For updates and news about the project, please refer to our [blog article](https://nwodothomas.github.io/blogpost/).
 
 ## Inspiration
 
